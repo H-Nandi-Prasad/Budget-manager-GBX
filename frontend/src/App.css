@@ -1,0 +1,17 @@
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Remove conflicting styles */
+.logo {
+  display: none;
+}
+
+.card {
+  padding: 0;
+}
+
+.read-the-docs {
+  display: none;
+}
