@@ -3,8 +3,6 @@
 A professional-grade, role-based budget management system developed using Flask.  
 This platform enables departments and organizations to efficiently allocate, track, and report financial activities across multiple user roles with clean UI and structured workflows.
 
----
-
 ## 🔑 Key Features
 
 - 🔐 **Role-Based Authentication**
@@ -33,7 +31,74 @@ This platform enables departments and organizations to efficiently allocate, tra
 | Versioning   | Git                                           |
 | Deployment   | (Localhost; future: Render/Heroku compatible) |
 
+##📂 Folder Structure
+
+Budget-manager-GBX/
+├── app.py # Flask application entry point
+├── static/ # CSS, images, JS files
+│ └── style.css
+├── templates/ # HTML pages (Jinja2 templating)
+│ ├── login.html
+│ ├── dashboard.html
+│ └── ...
+├── database/ # SQLite DB or data files
+├── README.md
+└── requirements.txt # Python dependencies
 ---
 
-## 📂 Folder Structure
+## ⚙️ Local Development Setup
+
+### 🔹 Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/H-Nandi-Prasad/Budget-manager-GBX.git
+cd Budget-manager-GBXStep 2: Run Backend (Flask API)
+bash
+Copy
+Edit
+cd backend
+
+# Optional: Create a virtual environment
+python -m venv venv
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Flask backend server
+python app.pyStep 3: Run Frontend (npm)
+In a new terminal window/tab:
+
+bash
+Copy
+Edit
+cd frontend
+
+# Install node modules
+npm install
+
+# Start local frontend server
+npm run start
+
+API Interaction
+The frontend communicates with the Flask API via REST endpoints such as:
+
+bash
+Copy
+Edit
+GET    /api/budget
+POST   /api/budget
+DELETE /api/budget/<id>
+...
+
+##  What to Do Now
+
+1. Save this as `README.md` in the root of your project.
+2. Run:
+
+```bash
+git add README.md
+git commit -m "Updated README for split frontend/backend structure"
+git push
+
 
